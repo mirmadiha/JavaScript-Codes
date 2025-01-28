@@ -17,8 +17,8 @@ let city;
 //bigint
 //string => ""
 //boolean => true/false
-//null => standalone value
-//undefined => value not assigned yet
+//null => standalone value  //type=>object
+//undefined => value not assigned yet  //type=>undefined
 //symbol => uniqueness
 
 
