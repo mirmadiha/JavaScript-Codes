@@ -4,9 +4,10 @@
         //do some work
     } 
 */
-function callFunction(){
+function callFunction(message){
     console.log("Welcome to the function");
     console.log("This is a function");
+    console.log(message);
 }
 
 
@@ -14,4 +15,4 @@ function callFunction(){
  Function Call Syntax:
     function_name(); 
 */
-callFunction();
+callFunction("Hello World I am a function");
