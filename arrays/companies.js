@@ -5,9 +5,12 @@
 
 let companies=["Bloomberg","Google","Amazon","IBM","Microsoft"];
 console.log(`original array of comapnies: ${companies}`);
+
 companies.shift();
 console.log(`array after removing the first company: ${companies}`);
+
 companies.splice(2,1,"Uber");
 console.log(`array after removing IBM and adding Uber: ${companies}`);
+
 companies.push("Netflix");
 console.log(`array after adding Netflix at the end: ${companies}`);
