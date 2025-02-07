@@ -5,6 +5,7 @@
     } 
 */
 function callFunction(message){
+    //parameter -> input
     console.log("Welcome to the function");
     console.log("This is a function");
     console.log(message);
@@ -15,4 +16,4 @@ function callFunction(message){
  Function Call Syntax:
     function_name(); 
 */
-callFunction("Hello World I am a function");
+callFunction("Hello World I am a function"); //argument
