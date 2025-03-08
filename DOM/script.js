@@ -1,21 +1,7 @@
-let button=document.getElementById("myId");
-console.dir(button);
-console.log(button);
+///////Create a H2 heading element with text - "Hello JavaScript" 
+// ////and append "from CS students" to this text using JS.
 
-let headings=document.getElementsByClassName("heading-class");
-console.dir(headings);
-console.log(headings);
+let heading=document.querySelector("h2");
+console.dir(heading.innerText);
+heading.innerText=heading.innerText+"\t"+"From CS Students";
 
-let paras=document.getElementsByTagName("p");
-console.dir(paras);
-console.log(paras);
-
-let element=document.querySelector(".heading-class");
-// console.dir(element);
-console.log(element.tagName);
-
-let allElements=document.querySelectorAll("h1");
-console.dir(allElements);
-
-let div=document.querySelector("div");
-console.dir(div);
