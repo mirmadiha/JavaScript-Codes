@@ -1,7 +1,12 @@
-///////Create a H2 heading element with text - "Hello JavaScript" 
-// ////and append "from CS students" to this text using JS.
+/*
+Create 3 div with common class name - "box". 
+Access them and add some unique text to each of them
+*/
 
-let heading=document.querySelector("h2");
-console.dir(heading.innerText);
-heading.innerText=heading.innerText+"\t"+"From CS Students";
+let boxes=document.querySelectorAll(".box");
+console.log(boxes);
+boxes[0].innerText="I am box 1";
+boxes[1].innerText="I am box 2";
+boxes[2].innerText="I am box 3";
+
 
