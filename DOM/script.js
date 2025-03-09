@@ -1,14 +1,12 @@
-/*
-Create 3 div with common class name - "box". 
-Access them and add some unique text to each of them
-*/
+//Attributes
 
-let boxes=document.querySelectorAll(".box");
-console.log(boxes);
-let i =0;
-for(div of boxes){
-    boxes[i].innerHTML="I am box "+ i;
-    i++;
-}
+////getAttribute() method
+let attr=document.querySelector("div");
+console.log(attr);
+console.log(attr.getAttribute("class")); 
 
+
+////setAttribute() method
+attr.setAttribute("name","JAVA");
+console.log(attr.getAttribute("name"));
 
