@@ -1,1 +1,12 @@
-
+.container{
+    width:20%;
+    height:80%;
+    background-color:crimson;
+    color:thistle;
+    border:2px solid pink;
+    border-radius:10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
