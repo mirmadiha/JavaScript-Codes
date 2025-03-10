@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="DOM/style.css">
 </head>
 <body>
-    <div class="container" style="background-color: darkred;">
-        <h1 id="heading">hello</h1>
-        <ul>
-            <li>item1</li>
-            <li>item2</li>
-            <li>item3</li>
-        </ul>
+    <button onclick="console.log('Button was clicked!');alert('button was clicked!')">
+        click me!
+    </button>
+
+    <button ondblclick="console.log('Button was clicked 2 times!');">
+        click me 2 times!
+    </button>
+
+    <div>
+        <h3 onmouseover="console.log('You are inside a div')">This is a div</h3>
     </div>
-    <p>This is a sample</p>
     <script src="DOM/script.js"></script>
 </body>
 </html>
