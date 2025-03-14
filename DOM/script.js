@@ -3,8 +3,8 @@ div.addEventListener("click",function(){
     console.log("Hello Handler1");
 })
 
-div.addEventListener("click",function(){
-    console.log("Hello Handler2");
+div.addEventListener("click",function(evt){
+    console.log(evt);
 })
 
 /*
