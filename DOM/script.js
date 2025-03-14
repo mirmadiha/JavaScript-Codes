@@ -1,20 +1,20 @@
-let btn=document.querySelector("#btn");
-btn.addEventListener("click",function(){
-    console.log("Button was clicked - Handler 1");
-})
+/*
+crate  a toggle button that changes the screen to dark mode when clicked 
+and light mode when clicked again.
+*/
 
-btn.addEventListener("click",function(){
-    console.log("Button was clicked - Handler 2");
-})
-
-const handler3=()=>{
-    console.log("Button was clicked - Handler 3");
-}
-
-btn.addEventListener("click",handler3);
-
-btn.addEventListener("click",function(){
-    console.log("Button was clicked - Handler 4");
+let btn = document.querySelector("#btn");
+let currentMode="light";
+btn.addEventListener("click",()=>{
+    let body= document.querySelector("body");
+    if(currentMode=="light"){
+        body.style.backgroundColor="black";
+        body.style.color="white";
+        currentMode="dark";
+    }
+    else{
+        body.style.backgroundColor="white";
+        body.style.color="black";
+        currentMode="light";
+    }
 });
-
-btn.removeEventListener("click",handler3);
