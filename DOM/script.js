@@ -1,5 +1,13 @@
-
 let div=document.querySelector("div");
 div.addEventListener("click",function(){
-    alert("Hello World");
+    console.log("Hello Handler1");
 })
+
+div.addEventListener("click",function(){
+    console.log("Hello Handler2");
+})
+
+/*
+The addEventListener() method allows you to add many events to the same element, 
+without overwriting existing events.
+*/
