@@ -4,17 +4,20 @@ and light mode when clicked again.
 */
 
 let btn = document.querySelector("#btn");
+let body= document.querySelector("body");
 let currentMode="light";
+
+
 btn.addEventListener("click",()=>{
-    let body= document.querySelector("body");
-    if(currentMode=="light"){
-        body.style.backgroundColor="black";
-        body.style.color="white";
+    if(currentMode==="light"){
         currentMode="dark";
+        body.classList.add("dark");
+        body.classList.remove("light");
     }
     else{
-        body.style.backgroundColor="white";
-        body.style.color="black";
         currentMode="light";
+        body.classList.add("light");
+        body.classList.remove("dark");
     }
+    console.log(currentMode);
 });

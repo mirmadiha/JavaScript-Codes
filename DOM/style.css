@@ -1,12 +1,9 @@
-div{
-    width:100px;
-    height:100px;
-    background-color:tomato;
-    border-radius:5px;
+.light{
+    background-color:white;
+    color:black;
+}
+
+.dark{
+    background-color:black;
     color:white;
-    text-align:center;
-    border:2px solid peachpuff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
