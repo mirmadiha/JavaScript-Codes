@@ -1,13 +1,20 @@
-let div=document.querySelector("div");
-div.addEventListener("click",function(){
-    console.log("Hello Handler1");
+let btn=document.querySelector("#btn");
+btn.addEventListener("click",function(){
+    console.log("Button was clicked - Handler 1");
 })
 
-div.addEventListener("click",function(evt){
-    console.log(evt);
+btn.addEventListener("click",function(){
+    console.log("Button was clicked - Handler 2");
 })
 
-/*
-The addEventListener() method allows you to add many events to the same element, 
-without overwriting existing events.
-*/
+const handler3=()=>{
+    console.log("Button was clicked - Handler 3");
+}
+
+btn.addEventListener("click",handler3);
+
+btn.addEventListener("click",function(){
+    console.log("Button was clicked - Handler 4");
+});
+
+btn.removeEventListener("click",handler3);
