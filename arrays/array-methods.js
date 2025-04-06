@@ -66,3 +66,24 @@ const isGreater=a6.some((val)=>{
     return val%5==0;
 });
 console.log(isGreater); // true
+
+
+//find() method returns the first element in the array that satisfies the
+// condition checked by the argument function.
+// If no values satisfy the condition, undefined is returned.
+const a7=[22,15,30,24,18,20,101,50];
+const found=a7.find((val)=>{
+    return val>50;
+})
+console.log(found); // 101
+
+//findIndex() method returns the index of the first element in the array that satisfies     
+// the condition checked by the argument function.
+// If no values satisfy the condition, -1 is returned.
+const a8=[22,15,30,24,18,20,101,50];
+const foundIndex=a8.findIndex((val)=>{
+    return val>50;
+})
+console.log(foundIndex); // 6
+
+
