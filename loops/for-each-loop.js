@@ -7,7 +7,7 @@ each element of the array.
 */
 let arr=[1,2,3,4,5];
 arr.forEach((val)=>{
-    console.log(val);
+    console.log(val+1);
 })
 
 /*The callback function takes three arguments: 
