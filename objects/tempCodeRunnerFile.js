@@ -1,0 +1,1 @@
+const person1={name:"Harry",age:23, meth:()=>{console.log("hello")}};
