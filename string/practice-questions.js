@@ -17,5 +17,14 @@ console.log(word.toLowerCase()); //output: fox
 
 //PROBLEM 4: Extract the amount of money from the string
 const str="Please give Rs. 1000";
-const amount=str.slice("Please give ".length);
-console.log(amount); //output: Rs. 1000
+const amount=Number.parseInt(str.slice("Please give Rs. ".length));
+console.log(amount); //output: 1000
+
+console.log(typeof amount); //output: string
+
+//PROBLEM 5:
+//STRINGS ARE IMMUTABLE
+
+const str2="France";
+str2[2]='b';
+console.log(str2);//it wont work as strings are immutable
