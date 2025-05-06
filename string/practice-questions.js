@@ -25,6 +25,32 @@ console.log(typeof amount); //output: string
 //PROBLEM 5:
 //STRINGS ARE IMMUTABLE
 
-const str2="France";
+let str2="France";
 str2[2]='b';
 console.log(str2);//it wont work as strings are immutable
+
+//slice a string example
+let str3="Hello, World!";
+let slicedStr=str3.slice(0, 5); //slicing from index 0 to 5 (not including 5)
+console.log(slicedStr); //output: Hello
+
+//PROBLEM 6:
+//Write a function that takes a string as input and returns the number of vowels in the string.
+//The function should be case-insensitive, meaning it should count both uppercase and lowercase vowels.
+//The vowels are 'a', 'e', 'i', 'o', and 'u'.
+function countVowels(str) {
+    const vowels = 'aeiouAEIOU'; //both uppercase and lowercase vowels
+    let count = 0;
+    for (let char of str) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
+}
+const inputString = "Hello, World! This is a test string.";
+const vowelCount = countVowels(inputString);
+console.log(`The number of vowels in the string is: ${vowelCount}`); //output: 10
+
+
+
