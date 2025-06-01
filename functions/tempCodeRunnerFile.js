@@ -1,0 +1,1 @@
+console.log(firstCalc(5,3));
