@@ -18,23 +18,23 @@ const mark={
    mass: 78,
    height:1.69,
    calcBMI:function(){
-        this.bmi=mass / (height * height) ;
+        this.bmi= this.mass / (this.height * this.height);
        return this.bmi;
    }
 };
 
 const john={
    fullName:"John Smith",
-   mass: 78,
+   mass: 92,
    height:1.95,
    calcBMI:function(){
-       this.bmi=mass / (height * height) ;
+       this.bmi=this.mass / (this.height * this.height) ;
        return this.bmi;
    }
 }
 
-if(mark.bmi>john.bmi){
-    console.log(`${mark.fullName}'s BMI(${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`);
+if(mark.calcBMI()>john.calcBMI()){
+    console.log(`${mark.fullName}'s BMI(${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})`);
 }
 
 else{
