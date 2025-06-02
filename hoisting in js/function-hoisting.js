@@ -1,5 +1,5 @@
-//functiojn hoisting means that function declarations are shifted to 
-// the top of their scope
+// //functiojn hoisting means that function declarations are shifted to 
+// // the top of their scope
 
 
 greet(); //function can be called before its declaration
