@@ -1,12 +1,12 @@
 //default parameter:in javascript we sometimes forget to pass an argument to the functions 
 //due to which we get undefined but we can also set som default parameters 
-
 const greet=function(name="John"){
     console.log(`Hello , ${name}`);
 }
 
 greet("Harry");
 
+/*-------------------------------------------------------- */
 
 // Example of default parameters with multiple parameters
 const greetFrnds=function(fName="Harry",lName="Doe"){
@@ -15,6 +15,7 @@ const greetFrnds=function(fName="Harry",lName="Doe"){
 
 greetFrnds();
 
+/*-------------------------------------------------------- */
 
 //example of default parameters where one parameter depends on another
 const greetFamily=function(fName="Harry",lName=fName.toUpperCase()){
@@ -23,6 +24,7 @@ const greetFamily=function(fName="Harry",lName=fName.toUpperCase()){
 
 greetFamily();
 
+/*-------------------------------------------------------- */
 
 // Example of default parameters with an object
 const info=function(john={age:18,city:"Srinagar",birthYear:1990}){
@@ -31,6 +33,7 @@ const info=function(john={age:18,city:"Srinagar",birthYear:1990}){
 
 info();
 
+/*-------------------------------------------------------- */
 
 // Example of default parameters with a function that has a default object
 const friends=function(name=["Harry","Doe","Smith"]){
@@ -38,6 +41,8 @@ const friends=function(name=["Harry","Doe","Smith"]){
 }
 
 friends();
+
+/*-------------------------------------------------------- */
 
 // Example of default parameters with a function 
 // that has a default value for a parameter
@@ -48,6 +53,7 @@ const address=function(city="Srinagar"){
 
 address(null);
 
+/*-------------------------------------------------------- */
 
 //undefined value passed to a function with a default parameter
 // This will use the default value of "abc" for tehsil
