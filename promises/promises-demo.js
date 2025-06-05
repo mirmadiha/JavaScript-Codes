@@ -49,8 +49,15 @@ let promise3=new Promise((resolve,reject)=>{
     setTimeout(()=>console.log("promise3"),3000);
     resolve("Promise3 fulfilled");
 })
-
 Promise.all([promise1,promise2,promise3])
+.then((values)=>console.log(values))
+.catch((error)=>console.error(error));
+
+Promise.allSettled([promise1,promise2,promise3])
+.then((values)=>console.log(values))
+.catch((error)=>console.error(error));
+
+Promise.race([promise1,promise2,promise3])
 .then((values)=>console.log(values))
 .catch((error)=>console.error(error));
 
